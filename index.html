@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <dialog id="dialo">    
+        <div class="wrapper">
+            <menu>
+                <button id="closebtn" class="close" type="reset">Close</button>
+            </menu>
+            <div class="inner">
+                
+                <h1>Input form</h1>
+            
+                <div>
+                        
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" onchange="onChangeName(this.value)" required>
+                </div>
+                
+                <div>
+                        
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" placeholder="Enter email" name="email" id="email" required>
+                </div>
+                
+                <div>
+                        
+                    <label for="subject"><b>Subject:</b></label>
+                    <input type="text" placeholder="Enter subject" name="subject" id="subject" required>
+                </div>
+
+                <div>
+                    <label for="phoneNumber"><b>Phone No:</b></label>
+                    <input type="number" placeholder="Enter phoneNumber" id="phoneNumber" name="phoneNumber" required></textarea>
+                </div>
+
+                <div>
+                    <label for="comments"><b>Message:</b></label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                
+                <!-- <input type="password" placeholder="Enter message" name="psw-repeat" id="psw-repeat" required> -->
+                
+            <div class="buttoncontainer">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+
+            </div>
+        </div>
+    </dialog>
+
+    <menu>
+        <div id="payment-pg-container">
+            <div id="amountdiv">Amount to Pay : 599</div>
+            <div class="btnoutercontainer">
+                <b><p>Pay Using UPI apps</p></b>
+                <div id="buttons-container">
+                    <div><button class="paymentbutton" name="Phonepe" id="phonepe">Phonepe</button></div>
+                    <div><button class="paymentbutton" name="GooglePay" id="gpay">Gpay</button></div>
+                    <div><button class="paymentbutton" name="Paytm" id="paytm">Paytm</button></div>
+                    <div><button class="paymentbutton" name="BHIM" id="bhim">BHIM</button></div>
+                </div>
+                <p><b>Get Payment Link</b></p>
+                <p>you will get a Payment link on</p>
+                <input type="number" name="smsno" id="smsno">
+                <button id="sendsms">Send</button>
+            </div>
+            <div class="footer">
+                <div><h4>Get whatsapp and sms updates</h4><small>Click on this to turnoff updates</small></div>
+                <div class="togglebtnctr">
+                      <input type="button" id="togglebtn" value="OFF" style="color:blue" onclick="toggle(this);">
+                </div>
+            </div>
+        </div>
+    </menu>
+    <script src="inputform.js"></script>
+</body>
+</html>

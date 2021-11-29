@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=number] ,input[type=email],textarea{
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=number]:focus,textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+
+
+  
+.wrapper{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.inner{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper h1{
+  font-size: 1.5rem;
+    text-align: center;
+    justify-content: start;
+    align-content: center;
+}
+
+
+button{
+  margin: auto;
+}
+
+dialog
+{
+  height: 90%;
+  width: 90%;
+}
+
+.buttoncontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-pg-container{
+  display:flex;
+}
+
+.btnoutercontainer
+{
+  background-color: rgb(188, 220, 233);
+  max-width: 600px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.footer{
+  max-width: 600px;
+  margin: auto;
+}
+
+
+
+#amountdiv{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#sendsms
+{
+  border-radius: 10px;
+  background-color: #009900;
+  color: white;
+  padding: 15px 25px;
+  border: 1px;
+  text-align: center;
+}
+
+
+#smsno{
+  padding: 10px;
+  width: 70%;
+  padding: 10px;
+}
+
+#togglebtn{
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 5px;
+}
+#submit {
+  background-color: #04AA6D;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+/*close button*/
+
+#closebtn {
+  line-height: 20px;
+  width: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 10px;
+  margin-right: 20px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+#togglebtn{
+  margin-top: 30px;
+}
+
+#closebtn:hover{
+  color: white;
+  background-color:rgb(255, 81, 0);
+}
+
+
+.registerbtn:hover {
+  opacity: 1;
+}
+/*for payments button*/
+.paymentbutton
+{
+  width: 100%;
+  background: #004b8d;
+  color:#c9c9c9;
+  border: none;
+  border-radius: 10px;
+  margin: 0.3rem 0;
+  padding: 0 1rem;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+/* Set a style for the submit/register button */
+
+
+.submit:hover {
+  opacity:1;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h4{
+  margin-bottom: 0;
+}
